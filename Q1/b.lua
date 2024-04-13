@@ -8,6 +8,8 @@
 --
 -- I believe this to be ideal given the assumptions I can make.
 
+---@param player Player
+---@return boolean
 function onLogout(player)
 	if player:getStorageValue(1000) == 1 then
 		player:setStorageValue(1000, -1)
